@@ -1,0 +1,7 @@
+## YAML Template.
+---
+server:
+    port: 9080
+    servlet:
+        context-path: /inventario
+    
