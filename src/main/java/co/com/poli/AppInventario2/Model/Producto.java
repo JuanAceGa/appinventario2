@@ -6,14 +6,16 @@ public class Producto {
     private String codigo;
     private String nombre;
     private Double existencia;
+    private Double stock;
 
     public Producto() {
     }
 
-    public Producto(String codigo, String nombre, Double existencia) {
+    public Producto(String codigo, String nombre, Double existencia, Double stock) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.existencia = existencia;
+        this.stock = stock;
     }
 
     public String getCodigo() {
@@ -63,5 +65,13 @@ public class Producto {
             return false;
         }
         return true;
+    }
+
+    public Double getStock() {
+        return stock;
+    }
+
+    public void setStock(Double stock) {
+        this.stock = stock;
     }
 }

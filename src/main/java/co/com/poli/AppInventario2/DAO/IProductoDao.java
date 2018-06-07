@@ -7,4 +7,7 @@ import java.util.List;
 public interface IProductoDao {
     
     List<Producto> getProductos();
+    Producto getProducto(String codigo);
+    String create(Producto producto);
+    String edit(Producto producto, int index);
 }

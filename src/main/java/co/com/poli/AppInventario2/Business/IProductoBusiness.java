@@ -6,4 +6,8 @@ import java.util.List;
 
 public interface IProductoBusiness {
     List<Producto> getProductos();
+    
+    Producto getProducto(String codigo);
+    String create(Producto producto);
+    String edit(Producto producto);
 }

@@ -10,11 +10,11 @@ public class ListaProductos {
     static {
         lista = new ArrayList<Producto>() {
             {
-                add(new Producto("15", "Producto 15", 10d));
-                add(new Producto("25", "Producto 25", 20d));
-                add(new Producto("35", "Producto 35", 30d));
-                add(new Producto("45", "Producto 45", 40d));
-                add(new Producto("55", "Producto 55", 50d));
+                add(new Producto("15", "Producto 15", 10d, 5d));
+                add(new Producto("25", "Producto 25", 20d, 5d));
+                add(new Producto("35", "Producto 35", 30d, 5d));
+                add(new Producto("45", "Producto 45", 40d, 5d));
+                add(new Producto("55", "Producto 55", 50d, 5d));
             }
         };
     }

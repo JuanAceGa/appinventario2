@@ -14,4 +14,35 @@ public class ProductoDaoImpl implements IProductoDao{
     public List<Producto> getProductos() {
         return ListaProductos.getProductos();
     }
+
+    @Override
+    public Producto getProducto(String codigo) {
+        List<Producto> lista = ListaProductos.getProductos();
+        
+        for (Producto p : lista) {
+            if (p.getCodigo().equals(codigo)) {
+                return p;
+            }
+        }
+        
+        return null;
+    }
+
+    @Override
+    public String create(Producto producto) {
+        List<Producto> lista = ListaProductos.getProductos();
+        lista.add(producto);
+        
+        ListaProductos.setProductos(lista);
+        
+        return "Producto creado";
+    }
+
+    @Override
+    public String edit(Producto producto, int index) {
+        List<Producto> lista = ListaProductos.getProductos();
+        lista.add(index, producto);
+       
+        return "Producto actualizado.";
+    }
 }
